@@ -12,7 +12,7 @@
 
   <!-- CSS Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="CSS/styles.css">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/7cc0ad1c01.js" crossorigin="anonymous"></script>
@@ -20,32 +20,30 @@
   <!-- Bootstrap scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
+  <!-- Stylesheet -->
 
   <style>
+    body {
+      background-color: #000;
+    }
 
-  body {
-    background-color: #000;
-  }
-
-  h1 {
-    color: #c06014;
-    font-size: 300%;
-    text-align: left;
-    margin-bottom: 5%;
-  }
-
-
-  footer {
-    text-align: center;
-    padding-top: 15%;
-}
-
-.newsletterform {
-  text-align: left;
-  margin: -7% 20%;
-}
+    h1 {
+      color: #c06014;
+      font-size: 300%;
+      text-align: left;
+      margin-bottom: 5%;
+    }
 
 
+    footer {
+      text-align: center;
+      padding-top: 15%;
+    }
+
+    .newsletterform {
+      text-align: left;
+      margin: -7% 20%;
+    }
   </style>
 
 </head>
@@ -60,8 +58,8 @@
 
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">
-        <img src="images/video.png" alt="Eye-Candy-logo" width="50" height="45" class="d-inline-block align-text-top">
-        Eye Candy Cinemas
+          <img src="images/video.png" alt="Eye-Candy-logo" width="50" height="45" class="d-inline-block align-text-top">
+          Eye Candy Cinemas <i class="fas fa-home fa-1x"></i>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -97,34 +95,37 @@
       </center>
 
       <p><label>First Name:*</label>
-      <input type="text" name="firstname" placeholder="Enter First Name" required />
-      <label>Last Name:*</label>
-      <input type="text" name="Lastname" placeholder="Enter Last Name" required /><br />
-</p>
+        <input type="text" name="firstname" placeholder="Enter First Name" required />
+        <label>Last Name:*</label>
+        <input type="text" name="Lastname" placeholder="Enter Last Name" required /><br />
+      </p>
       <p><label>City Preference:*</label>
 
-      <select required>
-        <option value="">Select a Cinema</option>
-        <option value="Auckland">Eye Candy Auckland</option>
-        <option value="Christchurch">Eye Candy Christchurch</option>
-        <option value="Wellington">Eye Candy Wellington</option>
-      </select>
-</p>
+        <select required>
+          <option value="">Select a Cinema</option>
+          <option value="Auckland">Eye Candy Auckland</option>
+          <option value="Christchurch">Eye Candy Christchurch</option>
+          <option value="Wellington">Eye Candy Wellington</option>
+        </select>
+      </p>
 
       <div class="genderradio">
         <p><label>Gender (optional):</label><br />
-        <input type="radio" value="Male">Male
-        <input type="radio" value="Female">Female
-        <input type="radio" value="notlisted">Not Listed
-        <input type="text" name="Not Listed" /><br />
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="not listed">
+          <label for="other">Not listed</label>
+          <input type="text" name="Not Listed" placeholder="Inform (optional)"/><br />
         </p>
       </div>
 
       <p><label>Phone (optional):</label>
-      <input type="text" name="phone" placeholder="Enter Number" value="+64">
+        <input type="text" name="phone" placeholder="Enter Number" value="+64">
 
       <p><label>Email:*</label>
-      <input type="email" placeholder="Enter a valid email" required>
+        <input type="email" placeholder="Enter a valid email" required>
       </p>
 
       <p style="font-size: 12px">*required fields</p>
